@@ -71,8 +71,8 @@ reporter.generate(options);
  */
 html = fs.readFileSync(outputPath, {'encoding': 'utf8'});
 html = html
-  .replace('<style type="text/css">', '<style type="text/css">\nstrong {\nfont-size: 1.1em;\n}\n.hidden {display:none;}\n')
+  .replace('<style type="text/css">', '<style type="text/css">\nstrong {\nfont-size: 1.1em;\n}\n.hide_pre pre {display:none;}\n')
   .replace(/&lt;strong&gt;/g, '<strong>')
   .replace(/&lt;\/strong&gt;/g, '</strong>')
-  .replace(/<pre.*?class="(.*?)"/g, (match, p1) => match.replace(p1, p1 + " hidden") + "onclick='this.classList.toggle(\"hidden\")'");
+  .replace('<body>', '<body class=hide_pre onclick="this.classList.toggle(\'hide_pre\')">');
 fs.writeFileSync(outputPath, html);
