@@ -1,0 +1,88 @@
+[
+  {
+      "line": 1,
+    "elements": [
+      {
+        "line": 15,
+        "name": "Simple applications to renew can be made and processed",
+        "description": "These are lovely scenarios and this is a description",
+        "id": "customer-journey-transformation-smoke-tests;simple-applications-to-renew-can-be-made-and-processed;renewals-accepted-by-something;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4858828644,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "an adult United Kingdom renewal applicant",
+            "match": {
+              "arguments": [
+                {
+                  "val": "adult United Kingdom renewal",
+                  "offset": 3
+                }
+              ],
+              "location": "SomeJavaClass.anApplicant(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32709154753,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "they apply to renew their passport with a successful payment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "successful",
+                  "offset": 42
+                }
+              ],
+              "location": "SomeJavaClass.theyApplyToRenewTheirPassport(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65460530699,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the application will be processed with a status of true",
+            "match": {
+              "arguments": [
+                {
+                  "val": "true",
+                  "offset": 51
+                }
+              ],
+              "location": "SomeJavaClass.theApplicationWillBeFullyProcessed(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Customer Journey Transformation smoke tests",
+    "description": "\nThese are the smoke tests for the Made Up Project main product.",
+    "id": "customer-journey-transformation-smoke-tests",
+    "keyword": "Feature",
+    "uri": "customer_journey_transformation_smoke.feature"
+  }
+]

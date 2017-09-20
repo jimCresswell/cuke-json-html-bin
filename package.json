@@ -1,0 +1,29 @@
+{
+  "name": "cuke-json-html-bin",
+  "version": "0.0.1",
+  "description": "Command line utility to parse cucmber json reports to html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'no testing!'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimCresswell/cuke-json-html-bin.git"
+  },
+  "keywords": [
+    "Cucumber",
+    "testing",
+    "QA",
+    "reporting"
+  ],
+  "author": "Jim Cresswell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimCresswell/cuke-json-html-bin/issues"
+  },
+  "homepage": "https://github.com/jimCresswell/cuke-json-html-bin#readme",
+  "dependencies": {
+    "cucumber-html-reporter": "^3.0.1",
+    "minimist": "^1.2.0"
+  }
+}

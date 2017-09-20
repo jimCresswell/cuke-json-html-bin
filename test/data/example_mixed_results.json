@@ -1,0 +1,316 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 15,
+        "name": "Simple applications to renew can be made and processed",
+        "description": "This is the basic, happy path journey through some product",
+        "id": "customer-journey-transformation-smoke-tests;simple-applications-to-renew-can-be-made-and-processed;renewals-accepted-by-blah;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4535486609,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "an adult United Kingdom renewal applicant",
+            "match": {
+              "arguments": [
+                {
+                  "val": "adult United Kingdom renewal",
+                  "offset": 3
+                }
+              ],
+              "location": "SomeJavaClass.anApplicant(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30398370863,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "they apply to renew their passport with a successful payment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "successful",
+                  "offset": 42
+                }
+              ],
+              "location": "SomeJavaClass.theyApplyToRenewTheirPassport(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 87776859991,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the application will be processed with a status of true",
+            "match": {
+              "arguments": [
+                {
+                  "val": "true",
+                  "offset": 51
+                }
+              ],
+              "location": "SomeJavaClass.theApplicationWillBeFullyProcessed(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Simple applications to renew can be made and processed",
+        "description": "This is the basic, happy path journey through some product",
+        "id": "customer-journey-transformation-smoke-tests;simple-applications-to-renew-can-be-made-and-processed;renewals-accepted-by-blah;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3232397786,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "an veteran United Kingdom renewal applicant",
+            "match": {
+              "arguments": [
+                {
+                  "val": "veteran United Kingdom renewal",
+                  "offset": 3
+                }
+              ],
+              "location": "SomeJavaClass.anApplicant(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27416130533,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "they apply to renew their passport with a successful payment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "successful",
+                  "offset": 42
+                }
+              ],
+              "location": "SomeJavaClass.theyApplyToRenewTheirPassport(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 150142847107,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the application will be processed with a status of true",
+            "match": {
+              "arguments": [
+                {
+                  "val": "true",
+                  "offset": 51
+                }
+              ],
+              "location": "SomeJavaClass.theApplicationWillBeFullyProcessed(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Simple applications to renew can be made and processed",
+        "description": "This is the basic, happy path journey through some product",
+        "id": "customer-journey-transformation-smoke-tests;simple-applications-to-renew-can-be-made-and-processed;renewals-accepted-by-blah;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3203471900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "an adult online premium renewal applicant",
+            "match": {
+              "arguments": [
+                {
+                  "val": "adult online premium renewal",
+                  "offset": 3
+                }
+              ],
+              "location": "SomeJavaClass.anApplicant(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31686014746,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "they apply to renew their passport with a successful payment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "successful",
+                  "offset": 42
+                }
+              ],
+              "location": "SomeJavaClass.theyApplyToRenewTheirPassport(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 87435467761,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the application will be processed with a status of true",
+            "match": {
+              "arguments": [
+                {
+                  "val": "true",
+                  "offset": 51
+                }
+              ],
+              "location": "SomeJavaClass.theApplicationWillBeFullyProcessed(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Simple applications to renew can be made and processed",
+        "description": "This is the basic, happy path journey through DCS and DAP",
+        "id": "customer-journey-transformation-smoke-tests;simple-applications-to-renew-can-be-made-and-processed;renewals-rejected-by-blah;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3223664242,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "an adult overseas renewal applicant",
+            "match": {
+              "arguments": [
+                {
+                  "val": "adult overseas renewal",
+                  "offset": 3
+                }
+              ],
+              "location": "SomeJavaClass.anApplicant(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 38732359406,
+              "error_message": "net.serenitybdd.core.exceptions.SerenityManagedException: Expected condition failed: waiting for By.cssSelector: .column-two-thirds\u003ep\u003estrong to be present (tried for 5 second(s) with 100 MILLISECONDS interval)\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027hmpo-1fl18169\u0027, ip: \u0027127.0.0.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.2.0-42-generic\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: driver.version: unknown\n\tat net.serenitybdd.core.pages.WebElementFacadeImpl.throwShouldBePresentErrorWithCauseIfPresent(WebElementFacadeImpl.java:811)\n\tat net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:784)\n\tat page_objects.test_scripts.PexBasePage.getText(PexBasePage.java:91)\n\tat page_objects.test_scripts.or.pages.ApplicationConfirmationPage.getApplicationReference(ApplicationConfirmationPage.java:42)\n\tat step_definitions.specifications.serenity_steps.CustomerJourneyTransformationSmokeSteps.receivesAnApplicationReference(CustomerJourneyTransformationSmokeSteps.java:324)\n\tat step_definitions.specifications.serenity_steps.CustomerJourneyTransformationSmokeSteps$$EnhancerByCGLIB$$a34f7c99.CGLIB$receivesAnApplicationReference$14(\u003cgenerated\u003e)\n\tat step_definitions.specifications.serenity_steps.CustomerJourneyTransformationSmokeSteps$$EnhancerByCGLIB$$a34f7c99$$FastClassByCGLIB$$6b59ef17.invoke(\u003cgenerated\u003e)\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:395)\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:380)\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:355)\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)\n\tat step_definitions.specifications.serenity_steps.CustomerJourneyTransformationSmokeSteps$$EnhancerByCGLIB$$a34f7c99.receivesAnApplicationReference(\u003cgenerated\u003e)\n\tat step_definitions.specifications.CustomerJourneyTransformationSmokeCukeStepDefinitions.theyApplyToRenewTheirPassport(CustomerJourneyTransformationSmokeCukeStepDefinitions.java:71)\n\tat ✽.When they apply to renew their passport with a successful payment(customer_journey_transformation_smoke.feature:10)\nCaused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.cssSelector: .column-two-thirds\u003ep\u003estrong to be present (tried for 5 second(s) with 100 MILLISECONDS interval)\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027hmpo-1fl18169\u0027, ip: \u0027127.0.0.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.2.0-42-generic\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: driver.version: unknown\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:264)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)\n\tat net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:781)\n\tat page_objects.test_scripts.PexBasePage.getText(PexBasePage.java:91)\n\tat page_objects.test_scripts.or.pages.ApplicationConfirmationPage.getApplicationReference(ApplicationConfirmationPage.java:42)\n\tat step_definitions.specifications.serenity_steps.CustomerJourneyTransformationSmokeSteps.receivesAnApplicationReference(CustomerJourneyTransformationSmokeSteps.java:324)\n\tat step_definitions.specifications.serenity_steps.CustomerJourneyTransformationSmokeSteps$$EnhancerByCGLIB$$a34f7c99.CGLIB$receivesAnApplicationReference$14(\u003cgenerated\u003e)\n\tat step_definitions.specifications.serenity_steps.CustomerJourneyTransformationSmokeSteps$$EnhancerByCGLIB$$a34f7c99$$FastClassByCGLIB$$6b59ef17.invoke(\u003cgenerated\u003e)\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:395)\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:380)\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:355)\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)\n\tat step_definitions.specifications.serenity_steps.CustomerJourneyTransformationSmokeSteps$$EnhancerByCGLIB$$a34f7c99.receivesAnApplicationReference(\u003cgenerated\u003e)\n\tat step_definitions.specifications.CustomerJourneyTransformationSmokeCukeStepDefinitions.theyApplyToRenewTheirPassport(CustomerJourneyTransformationSmokeCukeStepDefinitions.java:71)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "they apply to renew their passport with a successful payment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "successful",
+                  "offset": 42
+                }
+              ],
+              "location": "SomeJavaClass.theyApplyToRenewTheirPassport(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "the application will be processed with a status of false",
+            "match": {
+              "arguments": [
+                {
+                  "val": "false",
+                  "offset": 51
+                }
+              ],
+              "location": "SomeJavaClass.theApplicationWillBeFullyProcessed(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Customer Journey Transformation smoke tests",
+    "description": "\nThese are the smoke tests for the Made Up Project main product.",
+    "id": "customer-journey-transformation-smoke-tests",
+    "keyword": "Feature",
+    "uri": "customer_journey_transformation_smoke.feature"
+  }
+]
