@@ -1,7 +1,7 @@
 const path = require('path');
 
 const reporter = require('cucumber-html-reporter');
-const arguments = require('minimist')(process.argv.slice(2), {alias: {'i': 'input'}});
+const arguments = require('minimist')(process.argv.slice(2), {alias: {'i': 'input', 't': 'theme'}});
 
 
 /**
@@ -12,6 +12,8 @@ if (!arguments.input) {
 }
 const inputDataPath = path.resolve(arguments.input);
 
+const reportTheme = arguments.theme || 'simple';
+
 
 /**
  * Set up the parsing options.
@@ -19,12 +21,12 @@ const inputDataPath = path.resolve(arguments.input);
 const inputData = require(inputDataPath);
 
 var options = {
-  theme: 'simple',
+  theme: reportTheme,
   jsonFile: inputDataPath,
   output: 'test/results/cucumber_report.html',
   brandTitle: inputData[0].name,
   name: "Specifications",
-  reportSuiteAsScenarios: false,
+  reportSuiteAsScenarios: true,
   launchReport: true,
   metadata: {
     "App Version":"0.3.2",
