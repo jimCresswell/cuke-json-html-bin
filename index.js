@@ -1,8 +1,10 @@
 const path = require('path');
+const fs = require('fs');
 
 const reporter = require('cucumber-html-reporter');
 const arguments = require('minimist')(process.argv.slice(2), {alias: {'i': 'input', 't': 'theme'}});
 
+const outputPath = 'test/results/cucumber_report.html';
 
 /**
  * Process input arguments.
@@ -11,23 +13,47 @@ if (!arguments.input) {
   throw new TypeError('Please specify a json file to parse');
 }
 const inputDataPath = path.resolve(arguments.input);
+const inputDataPathModified = inputDataPath.replace('.json', '_modified.json');
 
 const reportTheme = arguments.theme || 'simple';
 
 
 /**
- * Set up the parsing options.
+ * Parse the input json file for fiddling and data.
  */
 const inputData = require(inputDataPath);
 
+
+/**
+ * HACK: mark inserted example values for highlighting
+ */
+ const feature = inputData[0];
+ const scenarios = feature.elements;
+ scenarios.forEach(scenario => {
+   const steps = scenario.steps;
+   steps.forEach(step => {
+     if (step.match && step.match.arguments) {
+       step.match.arguments.forEach(arg => {
+         const value = arg.val;
+         step.name = step.name.replace(value, "<strong>" + value + "</strong>");
+       })
+     }
+   });
+ });
+fs.writeFileSync(inputDataPathModified, JSON.stringify(inputData));
+
+/**
+ * Set up the parsing options.
+ */
+
 var options = {
   theme: reportTheme,
-  jsonFile: inputDataPath,
-  output: 'test/results/cucumber_report.html',
+  jsonFile: inputDataPathModified,
+  output: outputPath,
   brandTitle: inputData[0].name,
   name: "Specifications",
   reportSuiteAsScenarios: true,
-  launchReport: true,
+  launchReport: false,
   metadata: {
     "App Version":"0.3.2",
     "Test Environment": "STAGING",
@@ -39,3 +65,14 @@ var options = {
 };
 
 reporter.generate(options);
+
+/**
+ * HACK: Modify the output file
+ */
+html = fs.readFileSync(outputPath, {'encoding': 'utf8'});
+html = html
+  .replace('<style type="text/css">', '<style type="text/css">\nstrong {\nfont-size: 1.1em;\n}\n.hidden {display:none;}\n')
+  .replace(/&lt;strong&gt;/g, '<strong>')
+  .replace(/&lt;\/strong&gt;/g, '</strong>')
+  .replace(/<pre.*?class="(.*?)"/g, (match, p1) => match.replace(p1, p1 + " hidden") + "onclick='this.classList.toggle(\"hidden\")'");
+fs.writeFileSync(outputPath, html);

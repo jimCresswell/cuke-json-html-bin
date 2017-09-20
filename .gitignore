@@ -1,5 +1,6 @@
 # Project specific
 test/results
+test/data/*modified.json
 
 # Logs
 logs
