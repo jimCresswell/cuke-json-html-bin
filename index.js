@@ -4,7 +4,9 @@ const fs = require('fs');
 const reporter = require('cucumber-html-reporter');
 const arguments = require('minimist')(process.argv.slice(2), {alias: {'i': 'input', 't': 'theme'}});
 
-const outputPath = 'test/results/cucumber_report.html';
+const outputDir = 'test/results/';
+const outputPathHtml = outputDir + 'cucumber_report.html';
+const outputPathCss = outputDir + 'main.css';
 
 /**
  * Process input arguments.
@@ -46,22 +48,14 @@ fs.writeFileSync(inputDataPathModified, JSON.stringify(inputData));
  * Set up the parsing options.
  */
 
-var options = {
+const options = {
   theme: reportTheme,
   jsonFile: inputDataPathModified,
-  output: outputPath,
+  output: outputPathHtml,
   brandTitle: inputData[0].name,
   name: "Specifications",
   reportSuiteAsScenarios: true,
-  launchReport: false,
-  metadata: {
-    "App Version":"0.3.2",
-    "Test Environment": "STAGING",
-    "Browser": "Chrome  54.0.2840.98",
-    "Platform": "Windows 10",
-    "Parallel": "Scenarios",
-    "Executed": "Remote"
-  }
+  launchReport: false
 };
 
 reporter.generate(options);
@@ -69,10 +63,25 @@ reporter.generate(options);
 /**
  * HACK: Modify the output file
  */
-html = fs.readFileSync(outputPath, {'encoding': 'utf8'});
+
+// Get the unmodified HTML
+var html = fs.readFileSync(outputPathHtml, {'encoding': 'utf8'});
+
+// Modify HTML contents
 html = html
   .replace('<style type="text/css">', '<style type="text/css">\nstrong {\nfont-size: 1.1em;\n}\n.hide_pre pre {display:none;}\n')
   .replace(/&lt;strong&gt;/g, '<strong>')
   .replace(/&lt;\/strong&gt;/g, '</strong>')
-  .replace('<body>', '<body class=hide_pre onclick="this.classList.toggle(\'hide_pre\')">');
-fs.writeFileSync(outputPath, html);
+  .replace('<body>', '<body class=hide_pre onclick="this.classList.toggle(\'hide_pre\')">')
+  .replace('</head>', '<link rel="stylesheet" type="text/css" href="main.css" />\n</head>');
+
+// Cache and remove css
+cssRegex = /<style[\s\S]+<\/style>/;
+const css = html.match(cssRegex);
+html = html.replace(css, '');
+
+// Write out CSS-less HTML
+fs.writeFileSync(outputPathHtml, html);
+
+// Write out CSS
+fs.writeFileSync(outputPathCss, css);
